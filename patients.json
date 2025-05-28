@@ -1,0 +1,55 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 35,
+      "gender": "Male",
+      "contact": "01234567890",
+      "address": "123 Main Street, Dhaka",
+      "medical_history": [
+        "Diabetes",
+        "High blood pressure"
+      ],
+      "appointments": [
+        {
+          "date": "2025-05-10",
+          "doctor": "Dr. Rahman",
+          "reason": "Routine checkup"
+        },
+        {
+          "date": "2025-06-15",
+          "doctor": "Dr. Ali",
+          "reason": "Follow-up on blood pressure"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 28,
+      "gender": "Female",
+      "contact": "01987654321",
+      "address": "456 Lake Road, Chittagong",
+      "medical_history": [
+        "Asthma"
+      ],
+      "appointments": [
+        {
+          "date": "2025-05-20",
+          "doctor": "Dr. Karim",
+          "reason": "Asthma checkup"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Abdul Kader",
+      "age": 42,
+      "gender": "Male",
+      "contact": "01711223344",
+      "address": "789 Park Avenue, Khulna",
+      "medical_history": [],
+      "appointments": []
+    }
+  ]
+  

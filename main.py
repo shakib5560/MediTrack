@@ -22,3 +22,32 @@ def view_all():
     if isinstance(data, dict) and "message" in data:
         return data
     return {"patients": data}    
+
+
+@app.get("/view/{name}")
+def view_patient(name: str):
+    data = read_json('patients.json')
+    if isinstance(data, dict) and "message" in data:
+        return data
+
+    name = name.lower()
+    matched_patients = []
+
+    for patient in data:
+        full_name = patient['name'].lower()
+        name_parts = full_name.split()
+
+        # 1. Exact full name match
+        if full_name == name:
+            return patient
+
+        # 2. First name or last name match
+        if name_parts:
+            if name_parts[0] == name or name_parts[-1] == name:
+                matched_patients.append(patient)
+
+    if matched_patients:
+        return matched_patients
+
+    return {"message": "Patient not found"}
+
